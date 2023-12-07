@@ -1,6 +1,6 @@
 fun main() {
     fun ways(map: Map<Long, Long>): Long {
-        return map.entries.mapIndexed {index: Int, (time: Long, distance: Long) ->
+        return map.entries.map {(time: Long, distance: Long) ->
             (1L ..< time).count {
                 it * (time - it) > distance
             }
