@@ -1,5 +1,3 @@
-import javax.swing.text.StyledEditorKit.BoldAction
-
 fun main() {
     tailrec fun extrapolate(sequence: List<List<Long>>, value: Long = 0L, factor:Int = 1, back: Boolean): Long {
         val current = sequence.last()
